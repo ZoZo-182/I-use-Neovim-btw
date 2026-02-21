@@ -1,5 +1,7 @@
 ## Omarchy
-Same as mac for now but on omarhcy 
+Same as mac for now but on omarhcy
+changes:
+1. packer -> lazy.nvim
 
 ## Mac
 Pretty sure I followed Primeagen's "From 0 to LSP" with a few changes \
