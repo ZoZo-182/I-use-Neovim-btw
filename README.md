@@ -1,5 +1,5 @@
 ## Omarchy
-Same as mac for now but on omarhcy
+Same as mac for now but on omarhcy \
 changes:
 1. packer -> lazy.nvim
 
