@@ -18,18 +18,52 @@ return require('packer').startup(function(use)
 	  'catppuccin/nvim',
 	  as = 'catppuccin',
 	  config = function ()
-		  vim.cmd('colorscheme catppuccin')
+		  vim.cmd.colorscheme("catppuccin")
 	  end
   })
 
   -- synthwave84
+  use({
+	  "artanikin/vim-synthwave84",
+	  as = "synthwave84",
+	  config = function ()
+		  vim.cmd.colorscheme("synthwave84")
+	  end
+  })
+
   -- aether
+use {
+    "bjarneo/aether.nvim",
+    branch = "v2",
+    as = "aether",
+    config = function()
+        require("aether").setup({
+            transparent = false,
+            colors = {
+                bg = "#1c1e26",
+                bg_dark = "#1c1e26",
+                bg_highlight = "#6c6f93",
+                fg = "#fadad1",
+                fg_dark = "#fadad1",
+                comment = "#6c6f93",
+                red = "#e95678",
+                orange = "#ec6a88",
+                yellow = "#fab795",
+                green = "#29d398",
+                cyan = "#59e3e3",
+                blue = "#26bbd9",
+                purple = "#ee64ac",
+                magenta = "#f075b5",
+            },
+        })
+        vim.cmd.colorscheme("aether")
+    end
+}
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use ('ThePrimeagen/harpoon')
   use ('mbbill/undotree')
   use ('tpope/vim-fugitive')
-  use('neovim/nvim-lspconfig')
   use('jose-elias-alvarez/null-ls.nvim')
   use('MunifTanjim/prettier.nvim')
   use('olrtg/nvim-emmet')
