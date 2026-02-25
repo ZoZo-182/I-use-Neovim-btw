@@ -1,2 +1,2 @@
-require("macconfig")
+require("config")
 
