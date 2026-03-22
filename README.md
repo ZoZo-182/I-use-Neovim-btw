@@ -1,3 +1,5 @@
+# SEE ![my active neovim configs here](https://github.com/ZoZo-182/nvim) instead. I dislike pulling this. This was also made before I discovered submodules. Fuck it, we gotta go bald.
+
 ## Omarchy
 Same as mac for now but on omarhcy
 
